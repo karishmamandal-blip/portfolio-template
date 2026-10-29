@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- STEP 8: add scroll-smooth to <html> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Full Stack Developer</title>
+
+  <!-- STEP 0: Tailwind v4 Play CDN (no build step) -->
+  <!-- TODO: add the Tailwind CDN script tag here -->
+
+    <!-- STEP 9 & 10: add your <style type="text/tailwindcss"> block here (dark variant + brand theme) -->
+</head>
+
+<!-- STEP 1: FOUNDATION - page background, text colour, smooth font rendering -->
+<body>
+
+  <!-- STEP 2: NAVBAR -->
+  <header>
+    <nav>
+      <a href="#home">YourName<span>.dev</span></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- STEP 9: dark mode toggle -->
+      <button id="theme-toggle" type="button">Toggle theme</button>
+    </nav>
+  </header>
+
+  <!-- STEP 1: centred container shared by every section -->
+  <main>
+
+    <!-- STEP 3: HERO -->
+    <section id="home">
+      <div>
+        <p>Hi, I'm</p>
+        <h1>Your Name</h1>
+        <p>Full stack developer who builds fast, accessible web apps. Currently learning cloud and AI.</p>
+        <div>
+          <a href="#projects">View my projects</a>
+          <a href="#contact">Contact me</a>
+        </div>
+      </div>
+      <img src="https://placehold.co/400x400" alt="Portrait of Your Name">
+    </section>
+
+    <!-- STEP 4: ABOUT + SKILLS -->
+    <section id="about">
+      <h2>About me</h2>
+      <div>
+        <p>I'm a B.Tech student who enjoys turning ideas into working products. I started with HTML and CSS, moved on to Git and Linux, and now build full stack apps. I contribute to open source and like explaining what I learn.</p>
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>Tailwind CSS</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
+            <li>Linux</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5: PROJECT CARDS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+
+        <article>
+          <img src="https://placehold.co/640x360" alt="Flight booking project screenshot">
+          <div>
+            <h3>Flight Booking System</h3>
+            <p>Search flights, pick seats and see the fare update live.</p>
+            <ul>
+              <li>HTML</li>
+              <li>Tailwind</li>
+              <li>JS</li>
+            </ul>
+            <div>
+              <a href="#">Live demo</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="https://placehold.co/640x360" alt="Restaurant bill calculator screenshot">
+          <div>
+            <h3>Restaurant Bill Calculator</h3>
+            <p>Add dishes, apply tax and tip, and split the total.</p>
+            <ul>
+              <li>HTML</li>
+              <li>Tailwind</li>
+              <li>DOM</li>
+            </ul>
+            <div>
+              <a href="#">Live demo</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="https://placehold.co/640x360" alt="Open source CLI screenshot">
+          <div>
+            <h3>Open Source Contribution</h3>
+            <p>Fixed issues and opened pull requests during Hacktoberfest.</p>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+            <div>
+              <a href="#">Live demo</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- STEP 6: EXPERIENCE TIMELINE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol>
+        <li>
+          <span aria-hidden="true"></span>
+          <p>2026</p>
+          <h3>Hacktoberfest contributor</h3>
+          <p>Merged pull requests into open source repositories.</p>
+        </li>
+        <li>
+          <span aria-hidden="true"></span>
+          <p>2026</p>
+          <h3>Built three web projects</h3>
+          <p>Flight booking, bill calculator and result calculator.</p>
+        </li>
+        <li>
+          <span aria-hidden="true"></span>
+          <p>2025</p>
+          <h3>Started B.Tech in Full Stack AI &amp; Cloud</h3>
+          <p>Linux, Git, HTML and CSS in the first semester.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- STEP 7: CONTACT FORM -->
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <form>
+        <label>Name
+          <input type="text" placeholder="Jane Doe">
+        </label>
+        <label>Email
+          <input type="email" placeholder="jane@example.com">
+        </label>
+        <label>Message
+          <textarea rows="4" placeholder="Tell me about your idea..."></textarea>
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- STEP 8: FOOTER -->
+  <footer>
+    <p>&copy; 2026 Your Name. Built with HTML and Tailwind CSS.</p>
+  </footer>
+
+  <!-- STEP 9: dark mode toggle (only JS in the project) -->
+  <!-- TODO: dark mode JavaScript goes here -->
+</body>
+</html>
